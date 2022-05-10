@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@300&display=swap');
+/* font-family: 'Mukta', sans-serif; */
+/* font-family: 'Roboto Mono', monospace; */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(52, 186, 126);
+}
+
+
+nav ul{
+    display: flex;
+    list-style-type: none;
+    height: 60px;
+    background-color: black;
+    color: white;
+    align-items:center;
+}
+
+nav ul li {
+    padding: 0 12px;
+}
+.brand {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+
+}
+.brand img{
+    padding: 0 8px;
+    width: 54px;
+    
+}
+.container{
+    min-height: 80vh;
+    color: white;
+    background-color: black;
+    font-family: 'Roboto Mono', monospace;
+    display: flex;
+    margin: 23px auto;
+    padding: 34px;
+    width: 90%;
+    font-size: 11px;
+    border-radius: 10px;
+    background-image: url('bgnew1.png')  ;
+    background-repeat: no-repeat ;
+    background-size: 160vh ;   
+    background-position: 230px 163px; 
+
+}
+.bottom{
+    position: sticky;
+    height: 120px;
+    background-color: black;
+    color: white;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  
+}
+.icons{
+    margin-top: 14px;
+    color: white;
+
+}
+.icons i{
+    cursor: pointer;
+}
+#myProgressbar{
+    cursor: pointer;
+    width: 80vw;
+}
+.songItem{
+    height: 50px;
+    display: flex;
+    background-color: white;
+    color: black;
+    
+    width:200%;
+    margin: 12px 0;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 20px;
+}
+.songItem img{
+width: 40px;
+margin: 0 22px;
+border-radius: 34px;
+
+}
+.timestamp{
+    margin: 0 23px;
+}
+.timestamp i{
+    cursor: pointer;
+
+}
+.fwb{
+    font-weight: bold;
+}
+#sc{
+    margin-top: 100px;
+}
+.songinfo{
+     font-family: 'Roboto Mono', monospace; 
+    position: absolute;
+    left: 9.5vw;
+}
+.songinfo img{
+   opacity: 0;
+   transition:opacity 1s ease-in;
+}
+#previous{
+    padding: 15px;
+
+}
+#next{
+    padding: 15px;
+
+}
+
+
+
+
+/*For responiveness*/
+
+
+@media only screen and (max-width:720px)  {
+    .songItem{
+        width:95%;
+        margin-left: 150px;
+    }
+ #t-k{
+     display: flex;
+     align-items: center;
+ }
+ .icons i {
+  
+    margin-top: 32px;
+    
+}
+}
+    
+@media only screen and (max-width:622px)  {
+    .songItem{
+        width:80%;
+        margin-left: 100px;
+    }
+    .icons i {
+       margin-top: 32px;
+    }
+#t-k{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.icons i {
+  
+    margin-top: 32px;
+}    
+}
+@media only screen and (max-width:522px)  {
+    .songItem{
+        width:70%;
+        margin-left: 80px;
+    }
+#t-k{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.icons i {
+  
+    margin-top: 32px;
+    
+}
+
+}
+    
+@media only screen and (max-width:470px)  {
+    .songItem{
+        width:100%;
+        margin-left: 20px
+    }
+#t-k{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.icons i {
+  
+    margin-top: 32px;
+    
+}
+}
+    
+
